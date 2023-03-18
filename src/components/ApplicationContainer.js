@@ -105,8 +105,8 @@ export const ApplicationContainer = ({children}) => {
         }}
         fixed
         footer = {
-            <Footer mb={15} height={60} p="md">
-                <InputWithButton />
+            <Footer height={60} p="md">
+                <InputWithButton style={{margin:'-8px 0px 0px 0px'}} />
             </Footer>
         }
         header= {
