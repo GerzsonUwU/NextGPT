@@ -34,6 +34,9 @@ const useStyles = createStyles((theme) => ({
     border: `${rem(1)} solid ${
       theme.colorScheme === 'dark' ? theme.colors.dark[4] : theme.colors.gray[1]
     }`,
+    [`@media (max-width: 500px)`]: {
+      display: 'none',
+    },
   },
 
   indicator: {
