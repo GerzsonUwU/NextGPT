@@ -60,12 +60,12 @@ export function GradientSegmentedControl() {
   const { classes } = useStyles();
   const theme = useMantineTheme();
   return (
-    <Tooltip label="Select wich OpenAi modal to use. (I don't have access to GPT-4's api, will add it as soon as I get access.)" withArrow position="bottom" color={theme.colorScheme}>
+    <Tooltip label="Select wich OpenAi modal to use." withArrow position="bottom" color={theme.colorScheme}>
       <SegmentedControl
         radius="xl"
         size="md"
         data={[
-          { value: 'gpt-4', label: 'GPT-4', disabled: true },
+          { value: 'gpt-4', label: 'GPT-4' },
           { value: 'gpt-3.5-turbo', label: 'GPT-3.5-Turbo' },
           { value: 'gpt-3.5', label: 'GPT-3.5' },
           { value: 'gpt-3', label: 'GPT-3' },

@@ -1,6 +1,7 @@
 import { ActionIcon, Button, Text, CopyButton, Tooltip, Loader, useMantineTheme, Flex, Center,} from "@mantine/core"
 import { IconBrandOpenai, IconUser, IconCopy, IconCheck, IconApiApp } from '@tabler/icons-react';
 import Head from "next/head"
+import openai from "./api/apirequest";
 
 
 
@@ -49,4 +50,5 @@ export default function Home() {
 
 export async function apiresponse(){
   //have to write a server side alternative
+  openai()
 }
