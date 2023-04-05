@@ -3,7 +3,12 @@ import { IconBrandOpenai, IconUser, IconCopy, IconCheck, IconApiApp } from '@tab
 import Head from "next/head"
 import openai from "./api/apirequest";
 
-
+export async function ApiResponse(){
+  openai().then((response) => {
+    console.log(response);
+    console.log(response.message.content);
+  });
+}
 
 export default function Home() {
   const theme = useMantineTheme();
@@ -41,14 +46,8 @@ export default function Home() {
       </Flex>
 
       <Center>
-        <Button leftIcon={<IconApiApp size="1rem" />} onClick={apiresponse}>Api test</Button>
+        <Button leftIcon={<IconApiApp size="1rem" />} onClick={ApiResponse}>Api test</Button>
       </Center>
     </Flex>
   )
-}
-
-
-export async function apiresponse(){
-  //have to write a server side alternative
-  openai()
 }
