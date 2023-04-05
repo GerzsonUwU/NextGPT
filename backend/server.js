@@ -29,6 +29,6 @@ app.get('/api/openai', async (req, res) => {
   }
 });
 
-app.listen(6969, () => {
+app.listen(port, () => {
   console.log('Server listening on port: ', port);
 });
