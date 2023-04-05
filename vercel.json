@@ -6,6 +6,13 @@
         "config": {
           "maxLambdaSize": "50mb"
         }
-      }
+      },
+        {
+            "src": "next.config.js",
+            "use": "@vercel/next",
+            "config": {
+            "maxLambdaSize": "50mb"
+            }
+        }
     ]
   }
