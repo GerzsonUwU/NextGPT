@@ -5,8 +5,7 @@
         "use": "@vercel/node",
         "config": {
           "maxLambdaSize": "50mb"
-        },
-        "buildCommand": "npm run backend"
+        }
       }
     ]
   }
